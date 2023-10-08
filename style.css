@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  align-items: center;
+  background-color: cadetblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+#clock {
+  align-items: center;
+  background-color: burlywood;
+  border-radius: 8px;
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  width: 80vh;
+}
+
+#display {
+  align-items: center;
+  background-color: darkgray;
+  border-radius: 8px;
+  color: antiquewhite;
+  display: grid;
+  font-size: 25vh;
+  grid-template-columns: 4fr 1fr 4fr 1fr;
+  height: calc(100% - 3rem);
+  width: calc(100% - 3rem);
+}
+
+#hours {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#colon {
+  padding-bottom: 1rem;
+}
+
+#seconds_am-pm {
+    align-items: inherit;
+    display: grid;
+    font-size: 5vh;
+    grid-template-rows: 1fr 1fr;
+    height: 20vh;
+}
+
+.spans {
+  display: none;
+}
